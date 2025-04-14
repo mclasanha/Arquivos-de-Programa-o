@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria de Paisagens</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Galeria de Paisagens</h1>
+    <div class="imagem-container">
+      <img id="main-image" src="paisagem1.jpg" alt="Paisagem" class="imagem-paisagem">
+      <p id="descricao">Uma bela montanha com céu azul.</p>
+    </div>
+    <div class="botoes">
+      <button onclick="trocarImagem('paisagem1.jpg', 'Uma bela montanha com céu azul.')">Paisagem 1</button>
+      <button onclick="trocarImagem('paisagem2.jpg', 'Uma praia no pôr do sol.')">Paisagem 2</button>
+      <button onclick="trocarImagem('paisagem3.jpg', 'Uma praia com uma vista linda pro mar.')">Paisagem 3</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
