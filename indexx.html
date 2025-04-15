@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeria de Paisagens</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://kit.fontawesome.com/a2c5d5c1d7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="menu-acessibilidade" aria-label="Menu de acessibilidade">
+    <button onclick="toggleModoNoturno()" aria-label="Ativar modo noturno">🌙 Noturno</button>
+    <button onclick="toggleContraste()" aria-label="Ativar alto contraste">🔲 Contraste</button>
+    <button onclick="aumentarFonte()" aria-label="Aumentar fonte">🔠 A+</button>
+    <button onclick="diminuirFonte()" aria-label="Diminuir fonte">🔡 A-</button>
+    <a href="#conteudo" class="skip-link" tabindex="0">Pular para o conteúdo</a>
+  </nav>
+
+  <main class="container" id="conteudo" role="main" aria-label="Galeria principal de paisagens">
+    <h1>Galeria de Paisagens</h1>
+
+    <div class="imagem-container" aria-live="polite">
+      <img id="main-image" src="paisagem1.jpg" alt="Montanha ao pôr do sol" class="imagem-paisagem" />
+      <p id="descricao">Uma bela montanha ao pôr do sol.</p>
+    </div>
+
+    <div class="botoes" role="group" aria-label="Botões de seleção de paisagem">
+      <button tabindex="0" onclick="trocarImagem('paisagem1.jpg', 'Uma bela montanha ao pôr do sol.')">Paisagem 1</button>
+      <button tabindex="0" onclick="trocarImagem('paisagem2.jpg', 'Campos verdes e céu azul claro.')">Paisagem 2</button>
+      <button tabindex="0" onclick="trocarImagem('paisagem3.jpg', 'Lago tranquilo cercado por árvores.')">Paisagem 3</button>
+    </div>
+
+    <footer class="footer" role="contentinfo">
+      <h2>Tecnologias utilizadas</h2>
+      <ul>
+        <li><i class="fab fa-html5"></i> HTML</li>
+        <li><i class="fab fa-css3-alt"></i> CSS</li>
+        <li><i class="fab fa-js-square"></i> JavaScript</li>
+        <li><i class="fas fa-eye"></i> ScrollReveal.js</li>
+        <li><i class="fab fa-bootstrap"></i> Bootstrap (referenciado)</li>
+      </ul>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

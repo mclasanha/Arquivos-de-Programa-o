@@ -1,0 +1,121 @@
+/* Animação ao clicar na imagem */
+.imagem-paisagem.animar {
+  animation: pulse 0.6s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1) rotate(0deg);
+    filter: brightness(1);
+  }
+  50% {
+    transform: scale(1.05) rotate(1deg);
+    filter: brightness(1.2);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    filter: brightness(1);
+  }
+}
+
+/* Estilo em modo contraste */
+body.contraste {
+  background: #000;
+  color: #fff;
+}
+
+body.contraste .container {
+  background: #111;
+}
+
+body.contraste .footer,
+body.contraste h1,
+body.contraste h2,
+body.contraste p {
+  color: #fff;
+}
+
+.contraste-btn {
+  background: #fff !important;
+  color: #000 !important;
+  border: 1px solid #fff;
+}
+/* 🌙 Modo Noturno Suave */
+body.modo-noturno {
+  background: #1e1e2f;
+  color: #e0e0e0;
+}
+
+body.modo-noturno .container {
+  background: #2a2a40;
+}
+
+body.modo-noturno .menu-acessibilidade {
+  background: #333;
+}
+
+body.modo-noturno .botoes button {
+  background-color: #444;
+  color: #fff;
+}
+
+body.modo-noturno .botoes button:hover {
+  background-color: #666;
+}
+
+body.modo-noturno .footer {
+  color: #ccc;
+}
+
+body.modo-noturno .footer i {
+  color: #aaa;
+}
+
+body.modo-noturno .menu-acessibilidade button,
+body.modo-noturno .menu-acessibilidade a {
+  background: #555;
+  color: #eee;
+}/* 🌙 MODO NOTURNO */
+body.modo-noturno {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.modo-noturno .container {
+  background-color: #1e1e1e;
+}
+
+body.modo-noturno .menu-acessibilidade {
+  background-color: #1a1a1a;
+}
+
+body.modo-noturno button,
+body.modo-noturno a {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+body.modo-noturno .footer {
+  color: #ccc;
+}
+
+/* ALTO CONTRASTE */
+body.contraste {
+  background-color: #000;
+  color: #fff;
+}
+
+body.contraste .container,
+body.contraste .menu-acessibilidade {
+  background-color: #000;
+  color: #fff;
+}
+
+body.contraste button,
+body.contraste a {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #fff;
+}
+
